@@ -12,7 +12,9 @@
 ```
 
 ```
-  pen.fillStyle = 'blue;                                     // Set the color 
+  pen.fillStyle = 'blue';                                   
+
+  pen.strokeStyle = 'red';                                   
 ```
 
 ### Drawing Basic Shapes
@@ -24,10 +26,21 @@
 
 #### Rectangles-Stroked
 ```
-  pen.fillRect(x, y, width, height);
+  pen.strokeRect(x, y, width, height);
 ```
 
 #### Circles & Arcs
 ```
-  pen.arc(x, y, radius, startAngle, endAngle, drawClockwise);
+  pen.arc(x, y, radius, startAngle, endAngle, drawClockwise);// Creates outline of the given circle to show on screen          
+  pen.fill()                                                 // To draw stroked circle or arc               
+  pen.stroke()                                               // To draw filled circle or arc
+```
+
+#### Lines
+```
+  pen.beginPath();
+  pen.strokeStyle = 'black';
+  pen.moveTo(400, 400);
+  pen.lineTo(300,300);
+  pen.stroke()
 ```
