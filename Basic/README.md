@@ -12,7 +12,7 @@
 ```
 
 ```
-  pen.fillStyle = 'blue;                                     // Set the color 
+  pen.fillStyle = 'blue';                                    // Set the color 
 ```
 
 ### Drawing Basic Shapes
