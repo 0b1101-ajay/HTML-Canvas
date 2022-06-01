@@ -12,6 +12,8 @@ const pen = canvas.getContext('2d');
 pen.fillStyle = 'black';
 
 
+
+
 pen.fillRect(100, 100, Width/2, Height/2);
 
 

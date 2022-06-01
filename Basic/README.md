@@ -7,8 +7,8 @@
   const Width = window.innerWidth;                           // Set Width to full width of window
   const Height = window.innerHeight                          // Set Height to full height of window
   
-  canvas.width = Width;                                      // Set canvas' width equal to Width  
-  canvas.height = Height;                                    // Set canvas' height equal to Height
+  canvas.width = Width*0.95;                                 // Set canvas' width equal to 95% 0f Width  
+  canvas.height = Height*0.95;                               // Set canvas' height equal to 95% of Height
 ```
 
 ```
