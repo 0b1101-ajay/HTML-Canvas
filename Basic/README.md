@@ -12,13 +12,9 @@
 ```
 
 ```
-<<<<<<< HEAD
   pen.fillStyle = 'blue';                                   
 
   pen.strokeStyle = 'red';                                   
-=======
-  pen.fillStyle = 'blue';                                    // Set the color 
->>>>>>> fcdcf8ee5fdec7043ff3167578f025e27ba835a1
 ```
 
 ### Drawing Basic Shapes
