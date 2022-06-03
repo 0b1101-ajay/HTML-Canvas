@@ -8,36 +8,34 @@ canvas.height = Height*0.95;                               // Set canvas' height
 
 pen.fillStyle = 'blue';                                    
 
-pen.strokeStyle = 'red';                                     
+pen.strokeStyle = 'red';
+
+var x = 200;
+var y = 200;
+var dx = 5;
+var dy = 2;
+
+var radius = 30;
+
+function animate() {
+    
+    requestAnimationFrame(animate);
+    pen.clearRect(0, 0, Width, Height);
+    pen.beginPath();
+    pen.arc(x, y, radius, 0, Math.PI*2, true);
+    pen.fill();
+
+    if (x + radius>canvas.width  || x<radius) {
+        dx = -1*dx;
+    }
+
+    if (y + radius>canvas.height  || y<radius) {
+        dy = -1*dy;
+    }
+    x += dx;
+    y +=dy;
+    console.log(x)
+}
 
 
-
-// Drawing filled Rectangles 
-pen.fillRect(100, 100, Width*0.4, Height*0.4);
-
-
-// Drawing Stroked Rectangle
-pen.strokeRect(200, 200, Width*0.4, Height*0.4);
-
-
-// Drawing Circles & Arcs
-pen.fillStyle = 'red';  
-pen.arc(300, 300, 50, 0, Math.PI*2, true);
-pen.fill();
-
-
-pen.arc(400, 400, 50, 0, Math.PI*2, true);
-pen.stroke();
-
-
-// Drawing line
-pen.beginPath();
-pen.strokeStyle = 'black';
-pen.moveTo(400, 400);
-pen.lineTo(300,300);
-pen.stroke()
-
-
-
-
-
+animate();
